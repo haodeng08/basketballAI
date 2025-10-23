@@ -333,7 +333,7 @@ class BasketballCoach:
         return metadata
 
 # Initialize system and get API key from Claude
-CLAUDE_API_KEY = "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"
+CLAUDE_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 print("Initializing Basketball AI with Claude...")
 db = BasketballDatabase()
